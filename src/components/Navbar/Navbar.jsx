@@ -2,6 +2,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { useContext } from 'react';
+import swal from 'sweetalert';
 
 const Navbar = () => {
     const { user, logout } = useContext(AuthContext);
@@ -49,7 +50,7 @@ const Navbar = () => {
         logout()
             .then(result => {
 
-                alert('Sign Out Successful')
+                swal('Sign Out Successful')
                 console.log(result.user);
             })
             .catch(error => {
