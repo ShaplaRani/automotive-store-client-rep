@@ -96,7 +96,7 @@ const AddProduct = () => {
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text text-xl font-semibold
-                             text-gray-800 mb-1 ">Your Name:</span>
+                             text-gray-800 mb-1 ">Price:</span>
                         </label>
                         <input type="number" placeholder="Price" name="price"
                          className="input input-bordered"

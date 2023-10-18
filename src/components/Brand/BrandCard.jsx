@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const BrandCard = ({brand}) => {
-    const {brand_name, image_url} = brand;
+    const {id, brand_name, image_url} = brand;
     return (
         <div className=''>
         <div className="card  bg-base-100 shadow-xl">
@@ -12,6 +13,7 @@ const BrandCard = ({brand}) => {
       <div className="card-actions justify-end">
       <button className="btn btn-primary">Buy Now</button>
       </div> */}
+      <Link to={`/product/${id}`} className='btn'> Details </Link>
     </div>
         </div>
         </div>
