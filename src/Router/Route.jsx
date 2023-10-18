@@ -7,6 +7,7 @@ import Register from "../pages/Register/Register";
 import PrivateRouter from "../PrivateRoute/PrivateRoute";
 import AddProduct from "../pages/AddProduct/AddProduct";
 import Product from "../pages/Product/Product";
+import ProductDetails from "../pages/ProductDetails/ProductDetails";
 
 
 const router = createBrowserRouter([{
@@ -35,6 +36,11 @@ const router = createBrowserRouter([{
         element:<Product></Product>,
         loader: () => fetch('/brand.json')
         
+     },
+     {
+        path:"/productDetails/:id",
+        element:<ProductDetails></ProductDetails>,
+        loader: ({params}) => fetch(`http://localhost:5000/automotive/${params.id}`)
      }
 
     ]

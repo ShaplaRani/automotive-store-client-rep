@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 
 const ProductCard = ({ product }) => {
     console.log(product);
 
-    const {photo,rating,  price, type,brand, name } = product;
+    const {_id,photo,rating,  price, type,brand, name } = product;
 
     return (
         <div>
@@ -18,7 +19,8 @@ const ProductCard = ({ product }) => {
                     <p>{rating}</p>
                   
                     <div className="">
-                        <button className="btn btn-primary w-full">Details</button>
+                        <Link to={`/productDetails/${_id}`}>
+                        <button className="btn btn-primary w-full">Details</button></Link>
                         <button className="btn btn-primary w-full mt-4">Update</button>
                     </div>
                 </div>
