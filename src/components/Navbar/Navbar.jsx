@@ -37,7 +37,7 @@ const Navbar = () => {
 
         </NavLink>
         <NavLink
-            to="/myCart"
+            to="/cart"
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "text-orange-700 underline" : ""
             }
