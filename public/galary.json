@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "image": "https://example.com/image1.jpg"
+    },
+    {
+        "id": "2",
+        "image": "https://example.com/image2.jpg"
+    },
+    {
+        "id": "3",
+        "image": "https://example.com/image3.jpg"
+    },
+    {
+        "id": "4",
+        "image": "https://example.com/image4.jpg"
+    },
+    {
+        "id": "5",
+        "image": "https://example.com/image5.jpg"
+    },
+    {
+        "id": "6",
+        "image": "https://example.com/image6.jpg"
+    },
+    {
+        "id": "7",
+        "image": "https://example.com/image7.jpg"
+    },
+    {
+        "id": "8",
+        "image": "https://example.com/image8.jpg"
+    },
+    {
+        "id": "9",
+        "image": "https://example.com/image9.jpg"
+    },
+    {
+        "id": "10",
+        "image": "https://example.com/image10.jpg"
+    }
+]

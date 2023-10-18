@@ -11,6 +11,8 @@ const AutomotiveBrand = () => {
     },[])
     return (
         <div className="w-10/12 m-auto">
+            <div className="text-center"><h3 className="text-2xl font-semibold mb-5">
+                Brand Names of automotive</h3></div>
             <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
             {
                 brands?.map(brand => <BrandCard key={brand.id} brand={brand}></BrandCard> )

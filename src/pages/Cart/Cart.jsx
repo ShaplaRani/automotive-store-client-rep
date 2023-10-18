@@ -6,6 +6,7 @@ const Cart = () => {
     const loadedCarts = useLoaderData();
     const [carts, setCarts] = useState( loadedCarts);
     console.log(carts);
+    
     const handleDelete = id => {
         console.log(id);
         fetch(`http://localhost:5000/cart/${id}`,{

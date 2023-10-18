@@ -10,7 +10,7 @@ const ErrorPage = () => {
                 {
                     error.status === 404 && <div>
                         <h3 className="text-lg mb-4">Page Not Found</h3>
-                        <Link to="/" className="bg-orange-600 text-white py-3 px-6 rounded-lg">
+                        <Link to="/" className="bg-blue-600 text-white py-3 px-6 rounded-lg">
                             Go Back</Link>
                     </div>
                 }

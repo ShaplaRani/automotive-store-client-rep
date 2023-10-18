@@ -77,7 +77,7 @@ const AddProduct = () => {
                             <span className="label-text text-xl font-semibold
                              text-gray-800 mb-1 ">Brand Name:</span>
                         </label>
-                        <input type="text" placeholder="Enter your brand name" name="brand"
+                        <input type="text" placeholder=" brand name" name="brand"
                          className="input input-bordered"
                          required />
                     </div>
@@ -87,7 +87,7 @@ const AddProduct = () => {
                             <span className="label-text text-xl font-semibold
                              text-gray-800 mb-1 ">Type:</span>
                         </label>
-                        <input type="text" placeholder="Enter your name" name="type"
+                        <input type="text" placeholder="type" name="type"
                          className="input input-bordered"
                          required />
                     </div>
@@ -108,10 +108,11 @@ const AddProduct = () => {
                             <span className="label-text text-xl font-semibold
                              text-gray-800 mb-1 ">Description:</span>
                         </label>
-                       
-                        <input type="text" placeholder="Description" name="description"
+                       <textarea name="description" id="" cols="30" rows="10"
+                        placeholder="Description" className="input h-24 input-bordered" ></textarea>
+                        {/* <input type="text" placeholder="Description" name="description"
                          className="input input-bordered"
-                         required />
+                         required /> */}
                     </div>
                     {/* rating */}
                     <div className="form-control">

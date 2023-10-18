@@ -19,7 +19,7 @@ const Product = () => {
         // console.log(data);
         // setProducts(data);
         // Filter products based on brand_name
-        const uniqueProduct = data.filter(product => product.brand === brand_name)
+        const uniqueProduct = data.filter(product => product.brand.toLowerCase() === brand_name.toLowerCase())
         console.log(uniqueProduct);
         setUniqueProducts(uniqueProduct)
     } )
