@@ -13,7 +13,7 @@ const Product = () => {
     // console.log(brand);
    const {brand_name} = brand;
    useEffect(() => {
-    fetch('http://localhost:5000/automotive')
+    fetch('https://automotive-store-server-2np4zgyhp-shapla-sarkers-projects.vercel.app/automotive')
     .then(res => res.json())
     .then(data => {
         // console.log(data);
