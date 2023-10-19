@@ -100,7 +100,7 @@ const Navbar = () => {
     return (
         <div className=" w-10/12 m-auto  lg:flex  text-center   bg-base-100 mt-12 items-center justify-between">
 
-            <img className='h-10'  src={logo} alt="" />
+            <img className='h-10 m-auto lg:m-0 mb-5 lg:mb-0'  src={logo} alt="" />
 
             {/* theme */}
               {/* <div className=' w-full h-full bg-white dark:bg-black'>
@@ -110,13 +110,13 @@ const Navbar = () => {
             {/* <a className=" normal-case font-bold text-4xl
                  bg-gradient-to-r from-orange-600 to-green-500 text-transparent bg-clip-text">
                  Automotive</a> */}
-            <ul className=" flex gap-3 md:gap-5 justify-center mt-1 mb-2 ">
+            <ul className=" flex gap-3 md:gap-5 justify-center mt-1 mb-2">
 
                 {navLinks}
 
             </ul>
 
-            <div className=" flex gap-4">
+            <div className=" flex gap-4 justify-center mt-5 lg:mt-0">
                 {
                     user ? <div className="flex justify-center items-center">
                         <img className="w-7 h-7 rounded-full mr-3" src={user.photoURL} alt="" />

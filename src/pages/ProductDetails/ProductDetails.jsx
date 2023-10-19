@@ -34,7 +34,7 @@ const ProductDetails = () => {
       })
     }
     return (
-        <div className="w-10/12 m-auto my-20">
+        <div className="w-11/12 lg:w-10/12 m-auto my-20">
             <div className="card h-[90vh] bg-base-100 shadow-xl">
   <figure><img className="w-full" src={photo} alt="Shoes" /></figure>
   <div className="card-body">

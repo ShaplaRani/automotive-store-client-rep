@@ -27,7 +27,7 @@ const Product = () => {
    
    console.log(uniqueProducts);
     return (
-        <div className="w-10/12 m-auto">
+        <div className="w-11/12 lg:w-10/12 m-auto">
             
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 my-20">
             {

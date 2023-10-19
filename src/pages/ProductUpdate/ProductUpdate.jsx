@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 
 import Swal from "sweetalert2";
-
+import { MdSystemUpdateAlt } from 'react-icons/md';
 
 const ProductUpdate = () => {
     const product = useLoaderData()
@@ -47,8 +47,10 @@ const ProductUpdate = () => {
 
         <div className="">
              <div className="my-14">
+             <p className="flex justify-center mb-3"> 
+                 <MdSystemUpdateAlt className=" text-2xl font-bold text-blue-800"></MdSystemUpdateAlt></p>
                <h3 className="text-2xl md:text-3xl  text-center font-medium md:font-semibold
-                 text-gray-800 "> Product Update</h3>
+                 text-blue-700 "> Product Update</h3>
              </div>
                <div className="w-5/6 lg:w-2/5 bg-red-50 rounded-lg shadow-md py-20 m-auto
                 mt-10 mb-40">

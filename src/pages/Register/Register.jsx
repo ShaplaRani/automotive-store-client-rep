@@ -5,6 +5,8 @@ import swal from 'sweetalert';
 import { FaEyeSlash,FaEye } from "react-icons/fa";
 import { updateProfile } from "firebase/auth";
 
+import { FaRegEnvelopeOpen } from 'react-icons/fa';
+
 const Register = () => {
   
     const [showPassword,setShowPassword] = useState(false)
@@ -64,12 +66,15 @@ const Register = () => {
         })
     }
     return (
-        <div className="">
-            <div className="w-5/6 lg:w-2/5 bg-white rounded-lg shadow-md py-20 m-auto mt-24 mb-40">
-                <h3 className="text-2xl md:text-3xl  text-center font-medium md:font-semibold text-gray-800 "> Register your account</h3>
-                  <div className="w-4/5 md:w-3/4 lg:w-3/4 mx-auto my-12">
-                  <hr />
-                  </div>
+        <div className="my-14">
+              <div className="">
+                <p className="flex justify-center"> 
+                 <FaRegEnvelopeOpen className=" text-2xl font-bold text-blue-800"></FaRegEnvelopeOpen></p>
+               <h3 className="text-2xl md:text-3xl mt-3  text-center font-medium md:font-semibold
+                 text-blue-600 "> Register your account</h3>
+             </div>
+            <div className="w-5/6 lg:w-2/5 bg-red-50 rounded-lg shadow-md py-20 m-auto mt-10 mb-40">
+               
                 <form onSubmit={handleRegister} className="w-4/5 md:w-3/4 lg:w-3/4 mx-auto">
                     <div className="form-control">
                         <label className="label">
@@ -117,12 +122,12 @@ const Register = () => {
                         <label className="ml-2 " htmlFor="terms"> <a href="">Accept Term & Conditions</a></label>
                      </div>
                     <div className="form-control mt-6">
-                        <button className="btn text-xl font-semibold bg-orange-600 text-white">Register</button>
+                        <button className="btn text-xl font-semibold bg-blue-600 text-white">Register</button>
                     </div>
                 </form>
                 <p className=" w-4/5 md:w-3/4 lg:w-3/4 m-auto
                  text-center my-7 text-base font-semibold "> Already have an account ? Please <Link to="/login"
-                 className="text-orange-600"> Login</Link></p>
+                 className="text-blue-600"> Login</Link></p>
             </div>
         </div>
     );

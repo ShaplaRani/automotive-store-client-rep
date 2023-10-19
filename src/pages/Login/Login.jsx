@@ -5,7 +5,7 @@ import swal from 'sweetalert';
 import { FaEyeSlash,FaEye,FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { AuthContext } from "../../Provider/AuthProvider";
-
+import { FaRegEnvelopeOpen } from 'react-icons/fa';
    const Login = () => {
 
     const {signInUser,signInWithGoogle,signInWithGithub} = useContext(AuthContext)
@@ -56,13 +56,17 @@ import { AuthContext } from "../../Provider/AuthProvider";
       }
 
     return (
-        <div className="">
+        <div className=" my-14">
 
-            <div className="w-5/6 lg:w-2/5 bg-white rounded-lg shadow-md py-20 m-auto mt-24 mb-40">
-                <h3 className=" text-2xl md:text-3xl  text-center font-semibold text-gray-800 "> Login your account</h3>
+              <p className="flex justify-center"> 
+                 <FaRegEnvelopeOpen className=" text-2xl font-bold text-blue-800"></FaRegEnvelopeOpen></p>
+               <h3 className="text-2xl md:text-3xl mt-3  text-center font-medium md:font-semibold
+                 text-blue-600 "> Login your account</h3>
+            <div className="w-5/6 lg:w-2/5 bg-red-50 rounded-lg shadow-md py-24 m-auto mt-10 mb-40">
+                {/* <h3 className=" text-2xl md:text-3xl  text-center font-semibold text-gray-800 "> Login your account</h3>
                   <div className="w-4/5 md:w-3/4 lg:w-3/4 mx-auto my-12">
                   <hr />
-                  </div>
+                  </div> */}
                 <form onSubmit={handleLogin} className=" w-4/5 md:w-3/4 lg:w-3/4 mx-auto">
                     
                     <div className="form-control">
@@ -93,7 +97,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
                     </div>
                      
                     <div className="form-control mt-6">
-                         <button className="btn text-xl font-semibold bg-orange-600 text-white">
+                         <button className="btn text-xl font-semibold bg-blue-600 text-white">
                             Login</button>
                     </div>
                 </form>
@@ -114,7 +118,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
                  </div>
                 <p className=" w-4/5 md:w-3/4 lg:w-3/4 mx-auto text-center mt-9 text-base font-semibold "> 
                 Do not Have An Account ? Please <Link to="/register"
-                 className="text-orange-600"> Register</Link></p>
+                 className="text-blue-600"> Register</Link></p>
             </div>
 
          </div>

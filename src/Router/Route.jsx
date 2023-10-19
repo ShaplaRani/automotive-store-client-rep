@@ -41,7 +41,7 @@ const router = createBrowserRouter([{
      },
      {
         path:"/productDetails/:id",
-        element:<ProductDetails></ProductDetails>,
+        element: <PrivateRouter><ProductDetails></ProductDetails></PrivateRouter>,
         loader: ({params}) => fetch(`https://automotive-store-server-2np4zgyhp-shapla-sarkers-projects.vercel.app/automotive/${params.id}`)
      },
      {
