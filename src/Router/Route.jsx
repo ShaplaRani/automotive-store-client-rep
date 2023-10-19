@@ -42,17 +42,17 @@ const router = createBrowserRouter([{
      {
         path:"/productDetails/:id",
         element:<ProductDetails></ProductDetails>,
-        loader: ({params}) => fetch(`http://localhost:5000/automotive/${params.id}`)
+        loader: ({params}) => fetch(`https://automotive-store-server-2np4zgyhp-shapla-sarkers-projects.vercel.app/automotive/${params.id}`)
      },
      {
        path:"/updateProduct/:id",
        element:<ProductUpdate></ProductUpdate>,
-       loader: ({params}) => fetch(`http://localhost:5000/automotive/${params.id}`)
+       loader: ({params}) => fetch(`https://automotive-store-server-2np4zgyhp-shapla-sarkers-projects.vercel.app/automotive/${params.id}`)
      },
      {
         path:"/cart",
         element:<PrivateRouter><Cart></Cart></PrivateRouter>,
-        loader: () => fetch('http://localhost:5000/cart')
+        loader: () => fetch('https://automotive-store-server-2np4zgyhp-shapla-sarkers-projects.vercel.app/cart')
      }
 
     ]

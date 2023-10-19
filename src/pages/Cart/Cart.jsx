@@ -6,10 +6,10 @@ const Cart = () => {
     const loadedCarts = useLoaderData();
     const [carts, setCarts] = useState( loadedCarts);
     console.log(carts);
-    
+
     const handleDelete = id => {
         console.log(id);
-        fetch(`http://localhost:5000/cart/${id}`,{
+        fetch(`https://automotive-store-server-2np4zgyhp-shapla-sarkers-projects.vercel.app/cart/${id}`,{
             method:"DELETE"
         })
         .then(res => res.json())

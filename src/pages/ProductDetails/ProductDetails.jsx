@@ -13,7 +13,7 @@ const ProductDetails = () => {
         console.log('click');
 
          //send data to the server
-      fetch('http://localhost:5000/cart', {
+      fetch('https://automotive-store-server-2np4zgyhp-shapla-sarkers-projects.vercel.app/cart', {
         method:"POST",
         headers: {
             'content-type' : " application/json"
