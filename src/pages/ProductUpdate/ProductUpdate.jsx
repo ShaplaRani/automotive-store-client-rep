@@ -50,7 +50,7 @@ const ProductUpdate = () => {
                <h3 className="text-2xl md:text-3xl  text-center font-medium md:font-semibold
                  text-gray-800 "> Product Update</h3>
              </div>
-               <div className="w-5/6 lg:w-2/5 bg-orange-200 rounded-lg shadow-md py-20 m-auto
+               <div className="w-5/6 lg:w-2/5 bg-red-50 rounded-lg shadow-md py-20 m-auto
                 mt-10 mb-40">
                    
                   

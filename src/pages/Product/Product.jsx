@@ -29,7 +29,7 @@ const Product = () => {
     return (
         <div className="w-10/12 m-auto">
             
-           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 my-20">
             {
                  uniqueProducts.map(product => <ProductCard key={product._id} product={product}></ProductCard> )
             }

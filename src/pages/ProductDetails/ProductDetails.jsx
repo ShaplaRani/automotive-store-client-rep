@@ -34,13 +34,13 @@ const ProductDetails = () => {
       })
     }
     return (
-        <div className="w-10/12 m-auto">
+        <div className="w-10/12 m-auto my-20">
             <div className="card h-[90vh] bg-base-100 shadow-xl">
-  <figure><img src={photo} alt="Shoes" /></figure>
+  <figure><img className="w-full" src={photo} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">{name}</h2>
     <p>{description}</p>
-    <div className="card-actions justify-end">
+    <div className="card-actions justify-center md:justify-end">
       <button onClick={handleAddCart} className="btn btn-primary">Add to cart</button>
     </div>
   </div>

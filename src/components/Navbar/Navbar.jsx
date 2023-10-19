@@ -2,7 +2,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { useContext } from 'react';
-// import logo from "../../assets/IMG-20231018-WA0001.jpg"
+import logo from "../../assets/IMG-20231019-WA0000.jpg"
 import swal from 'sweetalert';
 
 const Navbar = () => {
@@ -62,11 +62,11 @@ const Navbar = () => {
     return (
         <div className=" w-10/12 m-auto  lg:flex  text-center   bg-base-100 mt-12 items-center justify-between">
 
-             {/* <img className='w-8' src={logo} alt="" /> */}
+             <img className='h-10'  src={logo} alt="" />
 
-            <a className=" normal-case font-bold text-4xl
+            {/* <a className=" normal-case font-bold text-4xl
                  bg-gradient-to-r from-orange-600 to-green-500 text-transparent bg-clip-text">
-                 Automotive</a>
+                 Automotive</a> */}
             <ul className=" flex gap-3 md:gap-5 justify-center mt-1 mb-2 ">
 
                 {navLinks}

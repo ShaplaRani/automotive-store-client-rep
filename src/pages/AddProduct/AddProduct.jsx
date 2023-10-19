@@ -1,5 +1,5 @@
 import swal from "sweetalert2";
-
+import { BsBox } from 'react-icons/bs';
 
 const AddProduct = () => {
 
@@ -44,10 +44,11 @@ const AddProduct = () => {
 
 <div className="">
              <div className="my-14">
-               <h3 className="text-2xl md:text-3xl  text-center font-medium md:font-semibold
+                <p className="flex justify-center">  <BsBox className=" text-2xl font-bold text-blue-800"></BsBox></p>
+               <h3 className="text-2xl md:text-3xl mt-3  text-center font-medium md:font-semibold
                  text-gray-800 "> Add new product</h3>
              </div>
-               <div className="w-5/6 lg:w-2/5 bg-orange-200 rounded-lg shadow-md py-20 m-auto
+               <div className="w-5/6 lg:w-2/5 bg-red-50 rounded-lg shadow-md py-20 m-auto
                 mt-10 mb-40">
                    
                   
@@ -128,7 +129,7 @@ const AddProduct = () => {
 
                     
                     <div className="form-control mt-6">
-                        <button className="btn text-xl font-semibold bg-orange-600
+                        <button className="btn text-xl font-semibold bg-blue-600
                          text-white">Submit</button>
                     </div>
                 </form>

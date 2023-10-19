@@ -3,7 +3,7 @@ import { AiOutlineCar } from 'react-icons/ai';
 import { MdCarRepair } from 'react-icons/md';
 const Service = () => {
     return (
-        <div className='w-10/12 m-auto grid grid-cols-3 gap-6 my-20 '>
+        <div className='w-10/12 m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-20 '>
             {/* 1 */}
             <div className="card  bg-base-100 shadow-xl text-center">
             <p className='mt-10 flex  justify-center ' ><SlDiamond className='text-5xl text-blue-600'></SlDiamond></p>
