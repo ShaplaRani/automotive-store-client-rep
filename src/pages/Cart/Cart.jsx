@@ -21,12 +21,10 @@ const Cart = () => {
        const similar = carts.filter( cart => cart.email == user.email )
        setCarts(similar)
 
-    },[carts, user])
+    },[user])
    
       
     
-
-
     const handleDelete = id => {
         console.log(id);
         Swal.fire({
@@ -40,7 +38,7 @@ const Cart = () => {
         }).then((result) => {
           if (result.isConfirmed) {
 
-            fetch(`https://automotive-store-server-2np4zgyhp-shapla-sarkers-projects.vercel.app/cart/${id}`,{
+            fetch(`https://automotive-store-server.vercel.app/cart/${id}`,{
               method:"DELETE"
           })
           .then(res => res.json())

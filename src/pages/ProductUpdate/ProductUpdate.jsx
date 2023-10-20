@@ -22,7 +22,7 @@ const ProductUpdate = () => {
       console.log(updateProduct);
 
       //send data to the server
-      fetch(`https://automotive-store-server-2np4zgyhp-shapla-sarkers-projects.vercel.app/automotive/${_id}`, {
+      fetch(`https://automotive-store-server.vercel.app/automotive/${_id}`, {
         method:"PUT",
         headers: {
             'content-type' : " application/json"

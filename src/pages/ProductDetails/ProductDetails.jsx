@@ -22,7 +22,7 @@ const ProductDetails = () => {
 
     
     const email = user.email
-    const newObject = {email,photo,description,rating,  price, type,brand, name}
+    const newObject = {email,photo,description,rating,  price, type,brand,name}
     console.log(newObject);
     
      
@@ -30,7 +30,7 @@ const ProductDetails = () => {
         console.log('click');
 
          //send data to the server
-      fetch('https://automotive-store-server-2np4zgyhp-shapla-sarkers-projects.vercel.app/cart', {
+      fetch('https://automotive-store-server.vercel.app/cart', {
         method:"POST",
         headers: {
             'content-type' : " application/json"
