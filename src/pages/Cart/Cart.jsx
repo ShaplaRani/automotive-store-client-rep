@@ -1,12 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
+import { useContext } from "react";
+ import { AuthContext } from "../../Provider/AuthProvider";
+
 
 const Cart = () => {
+
+       const { user} = useContext(AuthContext);
+       console.log(user.email);
+
     const loadedCarts = useLoaderData();
     const [carts, setCarts] = useState( loadedCarts);
     console.log(carts);
+
+    //check
+
+    useEffect(() => {
+       const similar = carts.filter( cart => cart.email == user.email )
+       setCarts(similar)
+
+    },[carts, user])
+   
+      // const similar = loadedCarts.filter( cart => cart.email === user.email )
+      //  setCarts(similar)
+    
+
 
     const handleDelete = id => {
         console.log(id);
@@ -46,10 +66,12 @@ const Cart = () => {
   
     return (
         <div className="w-11/12 lg:w-10/12 my-20 m-auto">
-           <h2 className="text-center mb-10 text-3xl font-semibold text-blue-700">All Selected Products</h2>
+           <h2 className="text-center mb-10 text-3xl font-semibold ">
+            All Selected <span className="text-orange-700">Products</span></h2>
           <div className="  w-full lg:w-7/12 m-auto   ">
           
              {
+              carts.length > 0 ?
                carts?.map( cart =>  <div key={cart._id} className="relative flex w-full mb-8
                flex-col md:flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
 
@@ -89,8 +111,10 @@ const Cart = () => {
                    </div>
                  </a>
                </div>
-             </div> )
-
+             </div> ) :
+              <p className=" text-blue-800 my-40 items-center grid col-span-2 text-4xl font-extrabold text-center">No Data Found
+              <img src="" alt="" />
+             </p>
            }
           </div>
         </div>

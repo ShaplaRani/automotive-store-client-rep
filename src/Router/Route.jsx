@@ -46,7 +46,7 @@ const router = createBrowserRouter([{
      },
      {
        path:"/updateProduct/:id",
-       element:<ProductUpdate></ProductUpdate>,
+       element:<PrivateRouter><ProductUpdate></ProductUpdate></PrivateRouter>,
        loader: ({params}) => fetch(`https://automotive-store-server-2np4zgyhp-shapla-sarkers-projects.vercel.app/automotive/${params.id}`)
      },
      {
@@ -59,3 +59,4 @@ const router = createBrowserRouter([{
 }])
 
 export default router;
+

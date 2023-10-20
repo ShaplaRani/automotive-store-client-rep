@@ -1,14 +1,37 @@
+ 
 import { useLoaderData } from "react-router-dom";
 
 import Swal from "sweetalert2";
 
+import { useContext } from "react";
+ import { AuthContext } from "../../Provider/AuthProvider";
+
 
 const ProductDetails = () => {
+
+  const { user} = useContext(AuthContext);
+  console.log(user.email);
  
    const product = useLoaderData();
     console.log(product);
-    const {_id,photo,description,rating,  price, type,brand, name} = product
+    
+    // const book ={
+    //   ban:"A",
+    //   en:"B"
+    // }
+    // const hj = "C"
+    // document.write(book[hj])
+    // console.log(book);
 
+    // const product = {products, user}
+    const {photo,description,rating,  price, type,brand, name} = product
+
+    //check start
+    const email = user.email
+    const newObject = {email,photo,description,rating,  price, type,brand, name}
+    console.log(newObject);
+    
+     //check end
     const handleAddCart = () => {
         console.log('click');
 
@@ -18,7 +41,8 @@ const ProductDetails = () => {
         headers: {
             'content-type' : " application/json"
         },
-        body:JSON.stringify(product)
+        // body:JSON.stringify( product)
+        body:JSON.stringify( newObject)
       })
       .then(res => res.json())
       .then(data => {
