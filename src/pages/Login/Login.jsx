@@ -63,10 +63,7 @@ import { FaRegEnvelopeOpen } from 'react-icons/fa';
                <h3 className="text-2xl md:text-3xl mt-3  text-center font-medium md:font-semibold
                  text-blue-600 "> Login your account</h3>
             <div className="w-5/6 lg:w-2/5 bg-red-50 rounded-lg shadow-md py-24 m-auto mt-10 mb-40">
-                {/* <h3 className=" text-2xl md:text-3xl  text-center font-semibold text-gray-800 "> Login your account</h3>
-                  <div className="w-4/5 md:w-3/4 lg:w-3/4 mx-auto my-12">
-                  <hr />
-                  </div> */}
+                
                 <form onSubmit={handleLogin} className=" w-4/5 md:w-3/4 lg:w-3/4 mx-auto">
                     
                     <div className="form-control">

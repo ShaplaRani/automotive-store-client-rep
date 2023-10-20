@@ -111,9 +111,7 @@ const AddProduct = () => {
                         </label>
                        <textarea name="description" id="" cols="30" rows="10"
                         placeholder="Description" className="input h-24 input-bordered" ></textarea>
-                        {/* <input type="text" placeholder="Description" name="description"
-                         className="input input-bordered"
-                         required /> */}
+                        
                     </div>
                     {/* rating */}
                     <div className="form-control">

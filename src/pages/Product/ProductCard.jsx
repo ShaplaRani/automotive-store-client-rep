@@ -14,10 +14,7 @@ const ProductCard = ({ product }) => {
                 <figure ><img className='w-full h-80' src={photo} alt="" /></figure>
                 <div className="card-body">
                     <div className='space-y-2 '>
-                        {/* <div className='flex gap-2  flex-1 justify-center md:justify-start'>
-                           <h2 className="card-title  flex flex-col-reverse md:flex-row justify-between ">,</h2>
-                           <h2 className="card-title">{brand}</h2>
-                        </div> */}
+                        
                         <p className='text-center'>
                        
                        <Rating

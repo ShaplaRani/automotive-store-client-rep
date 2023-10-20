@@ -15,7 +15,7 @@ const Cart = () => {
     const [carts, setCarts] = useState( loadedCarts);
     console.log(carts);
 
-    //check
+    //filter
 
     useEffect(() => {
        const similar = carts.filter( cart => cart.email == user.email )
@@ -23,8 +23,7 @@ const Cart = () => {
 
     },[carts, user])
    
-      // const similar = loadedCarts.filter( cart => cart.email === user.email )
-      //  setCarts(similar)
+      
     
 
 

@@ -15,23 +15,17 @@ const ProductDetails = () => {
    const product = useLoaderData();
     console.log(product);
     
-    // const book ={
-    //   ban:"A",
-    //   en:"B"
-    // }
-    // const hj = "C"
-    // document.write(book[hj])
-    // console.log(book);
+    
 
-    // const product = {products, user}
+   
     const {photo,description,rating,  price, type,brand, name} = product
 
-    //check start
+    
     const email = user.email
     const newObject = {email,photo,description,rating,  price, type,brand, name}
     console.log(newObject);
     
-     //check end
+     
     const handleAddCart = () => {
         console.log('click');
 

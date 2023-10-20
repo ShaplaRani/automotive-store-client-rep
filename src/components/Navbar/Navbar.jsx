@@ -24,27 +24,8 @@ const Navbar = () => {
         }
     }
 
-    // const [theme, setTheme] = useState(null)
-    // useEffect(() => {
-    //     if(window.matchMedia("(prefers-color-scheme:dark)").matches){
-    //         setTheme("dark");
-    //     }else{
-    //         setTheme("light"); 
-    //     }
-    // },[])
 
-    // useEffect(() => {
-    //     if(theme === "dark"){
-    //         document.documentElement.classList.add("dark")
-    //     }else{
-    //         document.documentElement.classList.remove("dark")
-    //     }
-    // },[theme])
-
-    // const handleThemeSwitch =() => {
-    //     console.log("click");
-    //     setTheme(theme === "dark"?"light":"dark");
-    // }
+    
 
     const navLinks = <>
 
@@ -102,14 +83,6 @@ const Navbar = () => {
 
             <img className='h-10 m-auto lg:m-0 mb-5 lg:mb-0'  src={logo} alt="" />
 
-            {/* theme */}
-              {/* <div className=' w-full h-full bg-white dark:bg-black'>
-                <button onClick={handleThemeSwitch} className='btn btn-circle'>toggle</button>
-             </div> */}
-
-            {/* <a className=" normal-case font-bold text-4xl
-                 bg-gradient-to-r from-orange-600 to-green-500 text-transparent bg-clip-text">
-                 Automotive</a> */}
             <ul className=" flex gap-3 md:gap-5 justify-center mt-1 mb-2">
 
                 {navLinks}
