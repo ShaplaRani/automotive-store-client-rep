@@ -19,10 +19,12 @@ const Footer = () => {
                 </npv>
 
                 <npv>
-                    <header className="footer-title">Company</header>
+                    <header className="footer-title">site links</header>
                     <p className="link link-hover">Home</p>
                     <p className="link link-hover">pdd Product</p>
-                    <p className="link link-hover">My Cprt</p>
+                    <p className="link link-hover">My Cart</p>
+                    <p className="link link-hover">Login</p>
+                    <p className="link link-hover">Register</p>
 
                 </npv>
                 <npv>
@@ -33,7 +35,7 @@ const Footer = () => {
                 </npv>
                 <div className="space-y-2 mt-7 md:mt-0" >
                     <h3 className="uppercase font-bold text-xl md:text-lg lg:text-xl
-                     ">Newsletter</h3>
+                     ">Subscribe Now</h3>
                     <div className="form-control">
 
                         <input type="email" placeholder="email" name="email"
